@@ -1,0 +1,74 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*The body which centers the calculator*/
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+/*The style for the outer most box; the calculator*/
+.calculator 
+{
+    width: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*The style for the imput box*/
+#display 
+{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/**/
+.buttons 
+{
+    display: grid; /*Sets the buttons' layout as a grid*/
+    /*defines how the colums will be laid out*/
+    grid-template-columns: repeat(4, 1fr); /*4 columns, each take up the same space (1fr)*/
+    gap: 10px; /*the gap between the buttons*/
+}
+
+/*Styling for buttons~*/
+button 
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+/*Make the button lighter when you hover over it*/
+button:hover 
+{
+    background-color: #555;
+}
+
+/*when you click the button make it even brighter*/
+button:active 
+{
+    background-color: #666;
+}
