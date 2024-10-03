@@ -17,27 +17,31 @@
         <!-- Container for the buttons -->
         <div class="buttons">
 
-            <!-- The list of buttons -->
-            <button onclick="getValue(event)">1</button>
-            <button onclick="getValue(event)">2</button>
-            <button onclick="getValue(event)">3</button>
-            <button onclick="getValue(event)">4</button>
-            <button onclick="getValue(event)">5</button>
-            <button onclick="getValue(event)">6</button>
-            <button onclick="getValue(event)">7</button>
-            <button onclick="getValue(event)">8</button>
-            <button onclick="getValue(event)">9</button>
-            <button onclick="getValue(event)" >0</button>
+            <!-- Numbers -->
+            <button onclick="update(1) ">1</button>
+            <button onclick="update(2) ">2</button>
+            <button onclick="update(3) ">3</button>
+            <button onclick="update(4) ">4</button>
+            <button onclick="update(5) ">5</button>
+            <button onclick="update(6) ">6</button>
+            <button onclick="update(7) ">7</button>
+            <button onclick="update(8) ">8</button>
+            <button onclick="update(9) ">9</button>
+            <button onclick="update(0) " >0</button>
 
-            <button onclick="getValue(event)">.</button>
-            <button onclick="getValue(event)">-</button>
-            <button onclick="getValue(event)">+</button>
-            <button onclick="getValue(event)">/</button>
-            <button onclick="getValue(event)">*</button>
-            <button onclick="getValue(event)">=</button>
+            <!-- Operators -->
+            <button onclick="update('.') ">.</button>
+            <button onclick="update('-') ">-</button>
+            <button onclick="update('+') ">+</button>
+            <button onclick="update('/') ">/</button>
+            <button onclick="update('*') ">*</button>
+            <button onclick="update('%') ">%</button>
 
-            <button onclick="getValue(event)">DEL</button>
-            <button onclick="getValue(event)">C</button>
+            <!-- Other things -->
+            <button onclick="calculate()">=</button>
+            <button onclick="del('DEL') ">DEL</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="clearEntry() ">CE</button>
         </div>
     </div>
 
