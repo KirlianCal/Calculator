@@ -18,7 +18,7 @@ body
 /*The style for the outer most box; the calculator*/
 .calculator 
 {
-    width: 200px;
+    width: 300px;
     background-color: #333;
     border-radius: 10px;
     padding: 20px;

@@ -45,6 +45,25 @@ function calculate()
 {
     let display = document.getElementById('display').value;
 
+    if (display.indexOf('SQRT')!==-1){
+        let numStr=display.split('SQRT')[1].trim();
+        let num=Number(numStr);
+        if (!isNaN(num)){
+            display=Math.sqrt(num).toString();
+            document.getElementById('display').value=display;
+            return;
+        }
+    }
+    if(display.indexOf('POW')!==-1){
+        const numStr=display.split('POW')[1].trim();
+        let num=Number(numStr);
+        if (!isNaN(num)){
+            display=Math.pow(num,2).toString();
+            document.getElementById('display').value=display;
+            return;
+        }
+    }
+    
     // Split the expression: numbers and operators
     let numbers = [];
     let operators = [];
